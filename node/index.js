@@ -11,7 +11,8 @@ const server = http.createServer((req, res)=>{
       });
    }
    if( endpoint==='/api' ){
-      // ここに処理を記述してください。  
+      // ここに処理を記述してください。
+      res.end({'data':'Hello World!!'})
    }
 });
 server.listen(8080); 
