@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
   if (endpoint === "/api") {
     // ここに処理を記述してください。
     res.statusCode = 200;
-    res.send('{ "data": "Hello World" }');
+    res.end('{ "data": "Hello World" }');
   }
 });
 server.listen(8080);
